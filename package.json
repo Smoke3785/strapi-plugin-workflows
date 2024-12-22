@@ -1,0 +1,22 @@
+{
+    "name": "@strapi-plugin-workflow/monorepo",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Speed-up HTTP requests with LRU cache",
+    "workspaces": [
+      "./strapi-plugin-workflows",
+      "./playground"
+    ],
+    "scripts": {
+      "dev": "yarn workspace playground develop",
+      "develop": "yarn workspace playground develop",
+      "build": "yarn workspace playground build",
+      "console": "yarn workspace playground strapi console",
+      "strapi": "yarn workspace playground strapi",
+      "plugin-develop": "yarn workspace strapi-plugin-workflows develop"
+    },
+    "author": "Strapi Community Org",
+    "license": "MIT",
+    "dependencies": {}
+  }
+  
